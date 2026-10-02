@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Премиум Красота — премиальный салон красоты в Москве</title>
+<meta name="description" content="Премиальный салон красоты: маникюр, педикюр, стрижки, брови, ресницы, эпиляция. Онлайн-запись.">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header" id="top">
+  <a class="logo" href="#top" aria-label="Премиум Красота">
+    <svg viewBox="0 0 48 48" width="52" height="52" fill="none" stroke="#d8b79a" stroke-width="1.2"><path d="M24 4c6 8 6 16 0 22-6-6-6-14 0-22zM44 24c-8 6-16 6-22 0 6-6 14-6 22 0zM24 44c-6-8-6-16 0-22 6 6 6 14 0 22zM4 24c8-6 16-6 22 0-6 6-14 6-22 0z"/><circle cx="24" cy="24" r="3"/></svg>
+  </a>
+  <div class="badge"><b>В топ-10 лучших салонов России</b><small>по рейтингу «Проверь салон»</small></div>
+  <nav class="nav" aria-label="Основное меню">
+    <a href="#services">Услуги</a><a href="#about">О нас</a><a href="#masters">Мастера</a><a href="#contacts">Контакты</a>
+  </nav>
+  <a class="phone" id="headerPhone" href="tel:+74950000001">+7 (495) 000-00-01</a>
+  <a class="tg" id="headerTg" href="https://t.me/primer_salon_1" target="_blank" rel="noopener" aria-label="Telegram">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="#fff"><path d="M21.5 3.5 2.6 10.8c-.9.4-.9 1.1 0 1.4l4.8 1.5 1.8 5.6c.2.6.5.7 1 .4l2.7-2.2 4.9 3.6c.9.5 1.5.2 1.7-.9l3.2-15.6c.3-1.3-.5-1.8-1.2-1.4zM9 13.3l9-5.7c.4-.3.8-.1.5.2l-7.4 6.7-.3 3.1z"/></svg>
+  </a>
+  <button class="menu-btn" data-menu>Меню</button>
+</header>
+<button class="burger" data-menu aria-label="Открыть меню"><span></span><span></span><span></span></button>
+
+<div class="overlay" id="menuOverlay" hidden>
+  <button class="overlay__close" data-menu aria-label="Закрыть меню">×</button>
+  <a href="#services">Услуги</a><a href="#about">О нас</a><a href="#branches">Салоны</a><a href="#masters">Мастера</a><a href="#contacts">Контакты</a>
+</div>
+
+<main>
+<section class="hero">
+  <h1 class="hero__title"><span>П<i>РЕ</i>МИУМ</span><span class="hero__line2">КРАСОТА</span></h1>
+  <p class="hero__sub">Премиальный салон красоты, где каждая деталь создана для вашего комфорта</p>
+  <div class="hero__cards">
+    <a class="card" href="#services" style="background-image:url(img/hero/services.jpg)"><span>Услуги</span></a>
+    <a class="card" href="#masters" style="background-image:url(img/hero/masters.jpg)"><span>Мастера</span></a>
+    <a class="card" href="#services" style="background-image:url(img/hero/permanent.jpg)"><span>Перманентный макияж</span><strong>Новое направление</strong></a>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <h2>Самый большой салон в городе</h2>
+  <p class="sub">2 рекорда России, 5 лет с рейтингом 5 на Яндекс.Картах</p>
+  <div class="about">
+    <div class="slider" id="slider">
+      <div class="slide" style="background-image:url(img/about/1.jpg)"></div>
+      <div class="slide" style="background-image:url(img/about/2.jpg)"></div>
+      <div class="slide" style="background-image:url(img/about/3.jpg)"></div>
+      <button class="slider__btn slider__btn--prev" aria-label="Назад">‹</button>
+      <button class="slider__btn slider__btn--next" aria-label="Вперёд">›</button>
+    </div>
+    <div class="about__cards">
+      <article class="info"><i class="star">★</i><div><h3>Доверие 30 000 клиентов в год</h3><p>С 2016 года мы задаём высокие стандарты сервиса и качества.</p></div></article>
+      <article class="info"><i class="star">★</i><div><h3>Рекорды и признание</h3><p>Дважды занесены в Книгу рекордов России.</p><p>Входим в топ лучших салонов России.</p></div></article>
+      <article class="info"><i class="star">★</i><div><h3>Комфорт и чистота</h3><p>Соблюдаем нормы СанПиН, в залах установлены рециркуляторы воздуха, есть зоны отдыха.</p></div></article>
+    </div>
+  </div>
+  <div class="founder">
+    <div class="founder__photo" style="background-image:url(img/about/founder.jpg)" role="img" aria-label="Основатель салона"></div>
+    <div><h3>Слово основателя</h3><p>Здесь будет приветственный текст основателя салона. Расскажите, с чего всё началось и какие принципы лежат в основе работы.</p></div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <h2>Услуги</h2>
+  <p class="sub">Более 30 видов профессиональных услуг</p>
+  <div class="services" id="servicesGrid"></div>
+</section>
+
+<section class="section" id="branches">
+  <h2>Наши салоны</h2>
+  <p class="sub">Выбирайте удобную для вас локацию</p>
+  <div class="branches" id="branchesGrid"></div>
+</section>
+
+<section class="section" id="masters">
+  <h2>Мастера</h2>
+  <p class="sub sub--light">Наши мастера — опытные профессионалы с многолетним стажем</p>
+  <div class="tabs" id="masterTabs" role="tablist"></div>
+  <h3 class="masters__title" id="mastersTitle"></h3>
+  <div class="masters" id="mastersGrid"></div>
+</section>
+
+<section class="brands" style="background-image:url(img/brands/bg.jpg)">
+  <h2>Бренды, с которыми мы работаем</h2>
+  <p class="sub">Выбираем лучшее для вашей красоты</p>
+  <ul class="brands__list" id="brandsList"></ul>
+</section>
+</main>
+
+<footer class="footer" id="contacts">
+  <div class="footer__cols">
+    <div><h3>Филиал 1</h3><p>г. Москва, ул. Центральная, д. 10, корп. 1</p><p><a href="tel:+74950000001">+7 (495) 000-00-01</a></p><p><a href="https://t.me/primer_salon_1" target="_blank" rel="noopener">Telegram</a></p></div>
+    <div><h3>Филиал 2</h3><p>г. Москва, проспект Мира, д. 25</p><p><a href="tel:+74950000002">+7 (495) 000-00-02</a></p><p><a href="https://t.me/primer_salon_2" target="_blank" rel="noopener">Telegram</a></p></div>
+    <div><h3>Связь</h3><p><a href="mailto:info@primer-salon.ru">info@primer-salon.ru</a></p><p>Ежедневно с 09:00 до 21:00</p></div>
+  </div>
+  <div class="footer__legal">
+    <p>ООО «Премиум Красота», ИНН 7700000000, ОГРН 1234567890123</p>
+    <p><a href="#">Политика конфиденциальности</a> · <a href="#">Пользовательское соглашение (договор оферты)</a></p>
+  </div>
+</footer>
+
+<div class="dock" id="dock"><button data-book>Онлайн-запись</button><button id="dockBranch">Филиал</button></div>
+<a class="up" id="up" href="#top" aria-label="Наверх">⌃</a>
+<div class="cookie" id="cookie"><p>Используя сайт или кликая на кнопку «ОК», вы соглашаетесь с нашей политикой конфиденциальности</p><button id="cookieOk">ОК</button></div>
+
+<dialog id="modal" class="modal"><button class="modal__close" id="modalClose" aria-label="Закрыть">×</button><div id="modalBody"></div></dialog>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
